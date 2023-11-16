@@ -1,4 +1,4 @@
-# flutter_layout
+# flutter_favor
 
 A new Flutter project.
 
