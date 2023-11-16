@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'home_page.dart';
-import 'app_state.dart';
+import 'widget/constant.dart';
+import 'widget/app_state.dart';
 
 void main() {
   runApp(MainApp());
@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => AppState(),
       child: MaterialApp(
-        title: 'Namer App',
+        title: Constant.mainAppTitle,
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),

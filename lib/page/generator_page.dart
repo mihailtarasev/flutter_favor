@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'app_state.dart';
 import 'package:provider/provider.dart';
-import 'package:english_words/english_words.dart';
+import 'constant.dart';
+import 'big_card.dart';
 
 class GeneratorPage extends StatelessWidget {
   @override
@@ -31,41 +32,19 @@ class GeneratorPage extends StatelessWidget {
                   appState.toggleFavorite();
                 },
                 icon: Icon(icon),
-                label: Text('Like'),
+                label: Text(Constant.like),
               ),
               SizedBox(width: 10),
               ElevatedButton(
                 onPressed: () {
                   appState.getNext();
                 },
-                child: Text('Next'),
+                child: Text(Constant.next),
               ),
             ],
           ),
         ],
       ),
     ));
-  }
-}
-
-class BigCard extends StatelessWidget {
-  const BigCard({
-    super.key,
-    required this.pair,
-  });
-
-  final WordPair pair;
-
-  @override
-  Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
-    return Card(
-      color: theme.colorScheme.primary,
-      child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Text(pair.asLowerCase),
-      ),
-    );
   }
 }

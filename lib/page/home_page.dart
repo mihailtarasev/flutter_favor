@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'generator_page.dart';
 import 'favorites_page.dart';
+import 'widget/constant.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -34,11 +35,11 @@ class _HomePageState extends State<HomePage> {
                 destinations: [
                   NavigationRailDestination(
                     icon: Icon(Icons.home),
-                    label: Text('Home'),
+                    label: Text(Constant.home),
                   ),
                   NavigationRailDestination(
                     icon: Icon(Icons.favorite),
-                    label: Text('Favorites'),
+                    label: Text(Constant.favorites),
                   ),
                 ],
                 selectedIndex: selectedIndex,

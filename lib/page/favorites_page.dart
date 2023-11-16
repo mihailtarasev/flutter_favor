@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'app_state.dart';
+import 'package:flutter_favor/widget/app_state.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_favor/widget/constant.dart';
 
 class FavoritesPage extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class FavoritesPage extends StatelessWidget {
 
     if (appState.favorites.isEmpty) {
       return Center(
-        child: Text('No favorites yet.'),
+        child: Text(Constant.noFavorYet),
       );
     }
 
