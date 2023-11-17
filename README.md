@@ -1,16 +1,23 @@
-# flutter_favor
+# Flutter Favor
 
-A new Flutter project.
+Flutter project.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+Side menu with buttons. Stretched
+Buttons with icons
+Tracking button clicks
+Changing and forwarding the state between widgets
+Switching between screens
+Transferring data to the second screen
+Localization of strings
 
-A few resources to get you started if this is your first Flutter project:
+## Особенности
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Боковое меню с кнопками. Растягивается
+Кнопки с иконками
+Отслеживание нажатия на кнопки
+Изменение и проброс состояния между виджетами
+Переход между экранами
+Передача данных на второй экран
+Локализация строк
