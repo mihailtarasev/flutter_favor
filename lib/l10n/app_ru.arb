@@ -1,10 +1,10 @@
 {
-  "mainAppTitle" : "Namer App",
-  "noFavorYet" : "No favorites yet.",
-  "like" : "Like",
-  "next" : "Next",
-  "home" : "Home",
-  "favorites" : "Favorites",
-  "noWidgetFor" : "no widget for {selectedIndex}",
-  "youHaveFavorites" : "You have {length} favorites"
+  "mainAppTitle" : "Избранное",
+  "noFavorYet" : "Еще нет избранного.",
+  "like" : "Лайк",
+  "next" : "Следующий",
+  "home" : "Личный кабинет",
+  "favorites" : "Избранное",
+  "noWidgetFor" : нет виджета для индекса {selectedIndex}",
+  "youHaveFavorites" : "У вас {length} избранных"
 }
