@@ -5,6 +5,6 @@
   "next" : "Следующий",
   "home" : "Личный кабинет",
   "favorites" : "Избранное",
-  "noWidgetFor" : нет виджета для индекса {selectedIndex}",
+  "noWidgetFor" : "нет виджета для индекса {selectedIndex}",
   "youHaveFavorites" : "У вас {length} избранных"
 }
