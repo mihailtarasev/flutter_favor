@@ -18,33 +18,34 @@ class GeneratorPage extends StatelessWidget {
     }
 
     return Scaffold(
+        backgroundColor: Colors.lime,
         body: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          BigCard(pair: pair),
-          SizedBox(height: 10),
-          Row(
-            mainAxisSize: MainAxisSize.min,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ElevatedButton.icon(
-                onPressed: () {
-                  appState.toggleFavorite();
-                },
-                icon: Icon(icon),
-                label: Text(Localize.like(context)),
-              ),
-              SizedBox(width: 10),
-              ElevatedButton(
-                onPressed: () {
-                  appState.getNext();
-                },
-                child: Text(Localize.next(context)),
+              BigCard(pair: pair),
+              SizedBox(height: 10),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  ElevatedButton.icon(
+                    onPressed: () {
+                      appState.toggleFavorite();
+                    },
+                    icon: Icon(icon),
+                    label: Text(Localize.like(context)),
+                  ),
+                  SizedBox(width: 10),
+                  ElevatedButton(
+                    onPressed: () {
+                      appState.getNext();
+                    },
+                    child: Text(Localize.next(context)),
+                  ),
+                ],
               ),
             ],
           ),
-        ],
-      ),
-    ));
+        ));
   }
 }
