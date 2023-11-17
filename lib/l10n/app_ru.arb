@@ -1,0 +1,10 @@
+{
+  "mainAppTitle" : "Namer App",
+  "noFavorYet" : "No favorites yet.",
+  "like" : "Like",
+  "next" : "Next",
+  "home" : "Home",
+  "favorites" : "Favorites",
+  "noWidgetFor" : "no widget for {selectedIndex}",
+  "youHaveFavorites" : "You have {length} favorites"
+}

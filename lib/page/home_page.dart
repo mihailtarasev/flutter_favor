@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'generator_page.dart';
 import 'favorites_page.dart';
-import 'widget/constant.dart';
+import 'package:flutter_favor/widget/localize.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -22,9 +22,8 @@ class _HomePageState extends State<HomePage> {
       case 1:
         page = FavoritesPage();
       default:
-        throw UnimplementedError('no widget for $selectedIndex');
+        throw UnimplementedError(Localize.noWidgetFor(context, selectedIndex));
     }
-
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
         body: Row(
@@ -35,11 +34,11 @@ class _HomePageState extends State<HomePage> {
                 destinations: [
                   NavigationRailDestination(
                     icon: Icon(Icons.home),
-                    label: Text(Constant.home),
+                    label: Text(Localize.home(context)),
                   ),
                   NavigationRailDestination(
                     icon: Icon(Icons.favorite),
-                    label: Text(Constant.favorites),
+                    label: Text(Localize.favorites(context)),
                   ),
                 ],
                 selectedIndex: selectedIndex,

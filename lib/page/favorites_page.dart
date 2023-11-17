@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_favor/widget/app_state.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_favor/widget/constant.dart';
+import 'package:flutter_favor/widget/localize.dart';
 
 class FavoritesPage extends StatelessWidget {
   @override
@@ -10,7 +10,7 @@ class FavoritesPage extends StatelessWidget {
 
     if (appState.favorites.isEmpty) {
       return Center(
-        child: Text(Constant.noFavorYet),
+        child: Text(Localize.noFavorYet(context)),
       );
     }
 
@@ -18,8 +18,8 @@ class FavoritesPage extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(20),
-          child: Text('You have '
-              '${appState.favorites.length} favorites:'),
+          child: Text(
+              Localize.youHaveFavorites(context, appState.favorites.length)),
         ),
         for (var pair in appState.favorites)
           ListTile(

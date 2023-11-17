@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'app_state.dart';
+import 'package:flutter_favor/widget/app_state.dart';
 import 'package:provider/provider.dart';
-import 'constant.dart';
-import 'big_card.dart';
+import 'package:flutter_favor/widget/localize.dart';
+import 'package:flutter_favor/widget/big_card.dart';
 
 class GeneratorPage extends StatelessWidget {
   @override
@@ -32,14 +32,14 @@ class GeneratorPage extends StatelessWidget {
                   appState.toggleFavorite();
                 },
                 icon: Icon(icon),
-                label: Text(Constant.like),
+                label: Text(Localize.like(context)),
               ),
               SizedBox(width: 10),
               ElevatedButton(
                 onPressed: () {
                   appState.getNext();
                 },
-                child: Text(Constant.next),
+                child: Text(Localize.next(context)),
               ),
             ],
           ),
