@@ -30,6 +30,7 @@ class GeneratorPage extends StatelessWidget {
                 children: [
                   ElevatedButton.icon(
                     onPressed: () {
+                      appState.playSound();
                       appState.toggleFavorite();
                     },
                     icon: Icon(icon),
@@ -38,6 +39,7 @@ class GeneratorPage extends StatelessWidget {
                   SizedBox(width: 10),
                   ElevatedButton(
                     onPressed: () {
+                      appState.playSound();
                       appState.getNext();
                     },
                     child: Text(Localize.next(context)),
