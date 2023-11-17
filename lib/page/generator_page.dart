@@ -3,6 +3,7 @@ import 'package:flutter_favor/widget/app_state.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_favor/widget/localize.dart';
 import 'package:flutter_favor/widget/big_card.dart';
+import 'package:flutter_shake_animated/flutter_shake_animated.dart';
 
 class GeneratorPage extends StatelessWidget {
   @override
@@ -23,7 +24,12 @@ class GeneratorPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              BigCard(pair: pair),
+              ShakeWidget(
+                shakeConstant: ShakeLittleConstant1(),
+                autoPlay: appState.isShake,
+                enableWebMouseHover: true,
+                child: BigCard(pair: pair),
+              ),
               SizedBox(height: 10),
               Row(
                 mainAxisSize: MainAxisSize.min,
@@ -32,6 +38,7 @@ class GeneratorPage extends StatelessWidget {
                     onPressed: () {
                       appState.playSound();
                       appState.toggleFavorite();
+                      appState.shake();
                     },
                     icon: Icon(icon),
                     label: Text(Localize.like(context)),
