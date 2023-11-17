@@ -13,6 +13,8 @@ Changing and forwarding the state between widgets<br/>
 Switching between screens<br/>
 Transferring data to the second screen<br/>
 Localization of strings<br/>
+Sound<br/>
+Shake Animation<br/>
 
 ## Особенности
 
@@ -23,3 +25,5 @@ Localization of strings<br/>
 Переход между экранами<br/>
 Передача данных на второй экран<br/>
 Локализация строк<br/>
+Звук<br/>
+Анимация<br/>

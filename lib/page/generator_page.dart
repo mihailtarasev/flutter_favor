@@ -25,7 +25,7 @@ class GeneratorPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ShakeWidget(
-                shakeConstant: ShakeLittleConstant1(),
+                shakeConstant: ShakeHardConstant1(),
                 autoPlay: appState.isShake,
                 enableWebMouseHover: true,
                 child: BigCard(pair: pair),
