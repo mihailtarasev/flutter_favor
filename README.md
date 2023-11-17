@@ -1,23 +1,23 @@
 # Flutter Favor
 
-Flutter project.
+Flutter project
 
 ## Features
 
-Side menu with buttons. Stretched
-Buttons with icons
-Tracking button clicks
-Changing and forwarding the state between widgets
-Switching between screens
-Transferring data to the second screen
-Localization of strings
+Side menu with buttons. Stretched<br/>
+Buttons with icons<br/>
+Tracking button clicks<br/>
+Changing and forwarding the state between widgets<br/>
+Switching between screens<br/>
+Transferring data to the second screen<br/>
+Localization of strings<br/>
 
 ## Особенности
 
-Боковое меню с кнопками. Растягивается
-Кнопки с иконками
-Отслеживание нажатия на кнопки
-Изменение и проброс состояния между виджетами
-Переход между экранами
-Передача данных на второй экран
-Локализация строк
+Боковое меню с кнопками. Растягивается<br/>
+Кнопки с иконками<br/>
+Отслеживание нажатия на кнопки<br/>
+Изменение и проброс состояния между виджетами<br/>
+Переход между экранами<br/>
+Передача данных на второй экран<br/>
+Локализация строк<br/>
