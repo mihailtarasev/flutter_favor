@@ -2,9 +2,9 @@
 
 Flutter project
 
-![Alt text](Screenshot_1700200608.png)
+![Alt text](Screenshot_1700200608-1.png)
 
-![Alt text](Screenshot_1700200593.png)
+![Alt text](Screenshot_1700200612.png)
 
 ## Features
 
