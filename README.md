@@ -2,6 +2,10 @@
 
 Flutter project
 
+![Alt text](Screenshot_1700200608.png)
+
+![Alt text](Screenshot_1700200593.png)
+
 ## Features
 
 Side menu with buttons. Stretched<br/>
