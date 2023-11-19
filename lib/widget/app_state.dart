@@ -1,10 +1,10 @@
-import 'dart:ffi';
-
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_favor/sound_service.dart';
+import 'package:flutter_favor/widget/sound_service.dart';
+import 'package:flutter_favor/database/dao/favorite_dao.dart';
 
 class AppState extends ChangeNotifier {
+  var dao = FavoriteDao();
   var current = WordPair.random();
   var soundService = SoundService();
   bool isShake = false;
