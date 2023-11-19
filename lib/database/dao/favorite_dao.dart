@@ -9,9 +9,21 @@ class FavoriteDao {
         .insert(FavoriteCompanion.insert(favorite: favorite));
   }
 
-  List<FavoriteData> getAll() async {
-    List<FavoriteData> allItems =
-        await database.select(database.favorite).get();
-    return allItems;
+  void delete(String favorite) async {
+    (database.delete(database.favorite)
+          ..where((tbl) => tbl.favorite.equals(favorite)))
+        .go();
+  }
+
+  Future<List<FavoriteData>> getAll() async {
+    List<FavoriteData> items = await database.select(database.favorite).get();
+    return items;
+  }
+
+  Future<List<FavoriteData>> getFavorites(String favorite) async {
+    List<FavoriteData> items = await (database.select(database.favorite)
+          ..where((tbl) => tbl.favorite.equals(favorite)))
+        .get();
+    return items;
   }
 }

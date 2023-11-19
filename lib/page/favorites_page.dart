@@ -22,10 +22,16 @@ class FavoritesPage extends StatelessWidget {
               Localize.youHaveFavorites(context, appState.favorites.length)),
         ),
         for (var pair in appState.favorites)
-          ListTile(
-            leading: Icon(Icons.favorite),
-            title: Text(pair.asLowerCase),
-          ),
+          ElevatedButton(
+            onPressed: () {
+              appState.deleteFavorite(pair);
+            },
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.amber),
+            child: ListTile(
+              leading: Icon(Icons.favorite),
+              title: Text(pair),
+            ),
+          )
       ],
     );
   }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
 
 class BigCard extends StatelessWidget {
   const BigCard({
@@ -7,7 +6,7 @@ class BigCard extends StatelessWidget {
     required this.pair,
   });
 
-  final WordPair pair;
+  final String pair;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +16,7 @@ class BigCard extends StatelessWidget {
       color: theme.colorScheme.primary,
       child: Padding(
         padding: const EdgeInsets.all(20),
-        child: Text(pair.asLowerCase),
+        child: Text(pair),
       ),
     );
   }

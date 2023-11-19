@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_favor/database/dao/favorite_dao.dart';
 import 'package:flutter_favor/widget/app_state.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_favor/widget/localize.dart';
@@ -48,6 +49,7 @@ class GeneratorPage extends StatelessWidget {
                     onPressed: () {
                       appState.playSound();
                       appState.getNext();
+                      appState.insertNext();
                     },
                     child: Text(Localize.next(context)),
                   ),
